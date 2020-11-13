@@ -1,0 +1,13 @@
+# Ignore artifacts:
+.next
+.vscode
+build
+dist
+coverage
+out
+pub
+
+# Ignore static assets
+
+# Ignore buld files
+

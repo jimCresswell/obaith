@@ -1,0 +1,56 @@
+{
+  "name": "obaith",
+  "version": "0.0.1",
+  "description": "Obaith website",
+  "repository": "git@github.com:jimCresswell/obaith.git",
+  "author": "Jim Cresswell <jim.cresswell@gmail.com>",
+  "license": "NONE",
+  "engines": {
+    "node": "14"
+  },
+  "private": true,
+  "scripts": {
+    "lint": "eslint \"**\"",
+    "csslint": "stylelint \"**/*.*css\"",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write .",
+    "qual": "yarn lint & yarn csslint & yarn prettier:check",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.2",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-markdown": "^2.0.0-rc.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-yaml": "^0.3.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.1.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  }
+}
