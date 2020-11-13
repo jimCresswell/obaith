@@ -1,6 +1,6 @@
 {
   "name": "obaith",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Obaith website",
   "repository": "git@github.com:jimCresswell/obaith.git",
   "author": "Jim Cresswell <jim.cresswell@gmail.com>",
@@ -10,12 +10,20 @@
   },
   "private": true,
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "eslint \"**\"",
     "csslint": "stylelint \"**/*.*css\"",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
-    "qual": "yarn lint & yarn csslint & yarn prettier:check",
+    "qa": "yarn lint & yarn csslint & yarn prettier:check & yarn test",
     "test": "jest"
+  },
+  "dependencies": {
+    "next": "10.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.5",

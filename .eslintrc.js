@@ -32,7 +32,7 @@ module.exports = {
       extends: ["plugin:yaml/recommended"],
     },
   ],
-  ignorePatterns: ["yarn.lock"],
+  ignorePatterns: ["yarn.lock", "*.*css", "*.svg", "*.ico"],
   rules: {
     "react/react-in-jsx-scope": "off",
     "prettier/prettier": ["error"],
