@@ -1,6 +1,6 @@
 # Obaith
 
-Obaith website
+Obaith website.
 
 ## Notes
 
