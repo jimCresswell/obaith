@@ -4,7 +4,7 @@ import Logo from "../Logo";
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} data-testid="footer">
       <p>The Footer</p>
       <Logo src="/vercel.svg" alt="Vercel Logo" />
     </footer>

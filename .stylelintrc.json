@@ -1,6 +1,8 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-config-sass-guidelines"],
   "rules": {
-    "string-quotes": "double"
+    "string-quotes": "double",
+    "value-list-comma-newline-after": null,
+    "declaration-colon-newline-after": null
   }
 }
