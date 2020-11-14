@@ -6,7 +6,7 @@
   "author": "Jim Cresswell <jim.cresswell@gmail.com>",
   "license": "NONE",
   "engines": {
-    "node": "14"
+    "node": "14.x"
   },
   "private": true,
   "scripts": {
